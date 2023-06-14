@@ -1,10 +1,11 @@
 // ==UserScript==
 // @name         PL - PM Alert
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.2
 // @description  Flash favicon when new PM received
-// @author       You
-// @match        https://pornolab.net/forum/*
+// @updateURL    
+// @author       hyper440
+// @match        https://pornolab.net/*
 // @grant        none
 // ==/UserScript==
 
