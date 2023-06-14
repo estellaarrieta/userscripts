@@ -3,7 +3,7 @@
 // @namespace    http://tampermonkey.net/
 // @version      0.2
 // @description  Flash favicon when new PM received
-// @updateURL    
+// @updateURL    https://github.com/estellaarrieta/userscripts/raw/main/PL_PM_alert.user.js
 // @author       hyper440
 // @match        https://pornolab.net/*
 // @grant        none
