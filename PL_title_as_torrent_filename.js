@@ -1,11 +1,11 @@
 // ==UserScript==
 // @name         PL use title as torrent filename
 // @namespace    http://tampermonkey.net/
-// @version      0.2
+// @version      0.3
 // @description  use title as torrent filename
 // @match        https://pornolab.net/forum/viewtopic.php?t=*
 // @match        https://pornolab.net/forum/viewforum.php?f=*
-// @match        https://pornolab.net/forum/tracker.php
+// @match        https://pornolab.net/forum/tracker.php*
 // @grant        none
 // ==/UserScript==
 
@@ -69,7 +69,7 @@
         }
 
         if (titleElement) {
-            const titleText = titleElement.innerHTML.replace(/<[^>]*>?/gm, ''); // Remove HTML tags
+            const titleText = titleElement.textContent;
             return titleText;
         }
 
