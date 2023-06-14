@@ -4,6 +4,7 @@
 // @version      0.3
 // @description  use title as torrent filename
 // @updateURL    https://github.com/estellaarrieta/userscripts/raw/main/PL_title_as_torrent_filename.user.js
+// @author       hyper440
 // @match        https://pornolab.net/forum/viewtopic.php?t=*
 // @match        https://pornolab.net/forum/viewforum.php?f=*
 // @match        https://pornolab.net/forum/tracker.php*
