@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         PL use title as torrent filename
 // @namespace    http://tampermonkey.net/
-// @version      0.3
+// @version      0.3.1
 // @description  use title as torrent filename
 // @updateURL    https://github.com/estellaarrieta/userscripts/raw/main/PL_title_as_torrent_filename.user.js
 // @author       hyper440
@@ -15,7 +15,7 @@
     'use strict';
 
     const pageType = getPageType();
-    const links = document.querySelectorAll('.dl-stub');
+    const links = [document.querySelector('.dl-stub.dl-link'), document.querySelector('.dl-stub img').parentNode];
 
     links.forEach(link => {
         // Remove the original click event
