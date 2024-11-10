@@ -1,9 +1,9 @@
 // ==UserScript==
-// @name         top bar
+// @name         pl minimal
 // @namespace    http://tampermonkey.net/
-// @version      2024-01-28
+// @version      0.2
 // @description  try to take over the world!
-// @author       You
+// @author       hyper440
 // @match        https://pornolab.net/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=pornolab.net
 // @grant        none
@@ -11,6 +11,16 @@
 
 (function() {
     'use strict';
+
+    const topmenu = document.querySelector(".topmenu");
+    topmenu.style.padding = 0;
+    topmenu.style.margin = 0;
+    topmenu.style.top = 0;
+    topmenu.style.position = "fixed";
+    topmenu.style.zIndex = 10;
+
+    const logo = document.getElementById("logo");
+    logo.style.display = "none";
 
     const search = document.getElementById("quick-search");
     const topmenuTR = document.querySelector(".topmenu table tr");
