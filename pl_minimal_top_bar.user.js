@@ -1,8 +1,7 @@
 // ==UserScript==
-// @name         pl minimal
+// @name         pl minimal top bar
 // @namespace    http://tampermonkey.net/
-// @version      0.2
-// @description  try to take over the world!
+// @version      0.3
 // @author       hyper440
 // @match        https://pornolab.net/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=pornolab.net
@@ -22,15 +21,18 @@
     const logo = document.getElementById("logo");
     logo.style.display = "none";
 
-    const search = document.getElementById("quick-search");
+    const searchForm = document.getElementById("quick-search");
+    const searchBar = document.getElementById("search-text");
     const topmenuTR = document.querySelector(".topmenu table tr");
     const secondChild = topmenuTR.children[2];
+
+    searchBar.style.width = "300px"
 
     // Creating a new td element
     const newTd = document.createElement("td");
 
     // Appending "search" inside the new td element
-    newTd.appendChild(search);
+    newTd.appendChild(searchForm);
 
     // Inserting the new td element before the second child of topmenuTR
     topmenuTR.insertBefore(newTd, secondChild);
